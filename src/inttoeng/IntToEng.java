@@ -14,7 +14,16 @@ public class IntToEng {
 
     // 数値を英訳する変換するメソッド
     static String translateEng(int n) {
-        return "";
-    }
+    	//数字を読み取る
+    	String number = String.valueOf(n);
+    	
+    	if(n>0&&n<20){
+    		return "";
+    	}else{
+    		
+    		return "";
+    	
 
+    }
+    }
 }

@@ -18,16 +18,27 @@ public class IntToEngTest {
 	} 
 	
 	@Test
+	public void てすと11() {
+		IntToEng num = new IntToEng();
+		String expected ="eleven";
+		String actual = num.translateEng(11);
+		assertThat(actual,is(expected));
+	}
+	
+	@Test
+	public void てすと17() {
+		IntToEng num = new IntToEng();
+		String expected ="seventeen";
+		String actual = num.translateEng(17);
+		assertThat(actual,is(expected));
+	}
+	
+	@Test
 	public void てすと21() {
 		IntToEng num = new IntToEng();
 		String expected ="twenty one";
 		String actual = num.translateEng(21);
 		assertThat(actual,is(expected));
 	} 
-
-	@Test
-	public void test() {
-		fail("Not yet implemented");
-	}
 
 }
