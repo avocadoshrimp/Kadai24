@@ -16,7 +16,8 @@ public class IntToEng {
     static String translateEng(int n) {
     	//数字を読み取る
     	String number = String.valueOf(n);
-    	
+    	int oneplace = n%10; //いちのくらい
+    	int tenplace = n/10; //じゅうのくらい
     	
     	//1~19
     	String[] NumPart1 = {"zero", "one", "two", "three", "four","five", "six", 
@@ -28,10 +29,11 @@ public class IntToEng {
     	String[] NumPart2 = {"","","twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"};
     	
     	if(n>0&&n<20){
-    		return "";
+    		number =NumPart1[n];
+    		return number;
     	}else{
-    		
-    		return "";
+    		number = NumPart2[tenplace]+" "+NumPart1[oneplace];
+    		return number;
     	
 
     }
