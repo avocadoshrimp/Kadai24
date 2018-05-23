@@ -47,5 +47,13 @@ public class IntToEngTest {
 		String actual = num.translateEng(21);
 		assertThat(actual,is(expected));
 	} 
+	
+	@Test
+	public void てすと100() {
+		IntToEng num = new IntToEng();
+		String expected ="hundred";
+		String actual = num.translateEng(100);
+		assertThat(actual,is(expected));
+	} 
 
 }
