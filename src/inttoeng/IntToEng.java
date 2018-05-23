@@ -28,14 +28,25 @@ public class IntToEng {
     	//20,30,40,50,60,70,80,90
     	String[] NumPart2 = {"","","twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"};
     	
+    	if(n==0){
+    		number="zero";
+    		return number;
+    	}
+    	
     	if(n>0&&n<20){
     		number =NumPart1[n];
     		return number;
-    	}else{
+    	}
+    	
+    	if(n==100){
+    		number="hundred";
+    		return number;
+    	}
+    	
+    	else{
     		number = NumPart2[tenplace]+" "+NumPart1[oneplace];
     		return number;
-    	
-
+    		}
+    	}
     }
-   }
-}
+
