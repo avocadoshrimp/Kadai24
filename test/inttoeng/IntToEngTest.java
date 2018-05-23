@@ -9,6 +9,14 @@ import org.junit.Test;
 public class IntToEngTest {
 	
 	@Test
+	public void てすと0() {
+		IntToEng num = new IntToEng();
+		String expected ="zero";
+		String actual = num.translateEng(0);
+		assertThat(actual,is(expected));
+	} 
+	
+	@Test
 	public void てすと1() {
 		IntToEng num = new IntToEng();
 		String expected ="one";
