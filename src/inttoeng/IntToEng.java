@@ -9,12 +9,23 @@ public class IntToEng {
         int input = sc.nextInt();
 
         System.out.println(translateEng(input));
+
     }
 
     // 数値を英訳する変換するメソッド
     static String translateEng(int n) {
     	//数字を読み取る
     	String number = String.valueOf(n);
+    	
+    	
+    	//1~19
+    	String[] NumPart1 = {"zero", "one", "two", "three", "four","five", "six", 
+    			"seven", "eight", "nine","ten", "eleven", "twelve", "thirteen",
+    			"fourteen","fifteen", "sixteen", "seventeen", "eighteen", "nineteen"};
+    	
+    	
+    	//20,30,40,50,60,70,80,90
+    	String[] NumPart2 = {"","","twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"};
     	
     	if(n>0&&n<20){
     		return "";
@@ -24,5 +35,5 @@ public class IntToEng {
     	
 
     }
-    }
+   }
 }
